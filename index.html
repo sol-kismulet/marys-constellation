@@ -61,6 +61,17 @@
       z-index: 3;
       animation: fadeInUp 8s ease-out 12s forwards;
     }
+    .scroll-hint {
+      position: absolute;
+      bottom: 5%;
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+      color: white;
+      opacity: 0;
+      z-index: 4;
+      animation: fadeInOut 3s ease-in-out 5s forwards;
+    }
     @keyframes fadeIn {
       to { opacity: 1; }
     }
@@ -70,12 +81,19 @@
         opacity: 1;
       }
     }
+    @keyframes fadeInOut {
+      0% { opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { opacity: 0; }
+    }
   </style>
 </head>
 <body>
   <div class="layer palms"></div>
   <div class="layer galaxy"></div>
   <img src="fox.png" alt="Purple Fox" class="fox" />
+  <div class="scroll-hint">scroll</div>
   <div class="letter">
     <p>Dear Elizabeth,<br /><br />
     You have arrived at a quiet place. A purple fox watches from the stars. A dragonfly hovers nearby. This page is not an answer. It is an opening.<br /><br />
