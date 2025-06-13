@@ -15,10 +15,11 @@
       min-height: 100%;
       font-family: 'Georgia', serif;
       overflow-x: hidden;
+      overflow-y: auto;
       background: black;
     }
     .layer {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
@@ -27,15 +28,16 @@
       background-size: cover;
       opacity: 0;
       transition: opacity 4s ease-in-out;
-      z-index: -1;
     }
     .layer.palms {
       background-image: url('palms.jpg');
       opacity: 1;
+      z-index: 0;
     }
     .layer.galaxy {
       background-image: url('galaxy.jpg');
       animation: fadeIn 6s ease-in-out 3s forwards;
+      z-index: 1;
     }
     .fox {
       position: absolute;
