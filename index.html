@@ -61,16 +61,22 @@
       z-index: 3;
       animation: fadeInUp 8s ease-out 12s forwards;
     }
-    .scroll-hint {
+    .gpt-button {
       position: absolute;
       bottom: 5%;
-      width: 100%;
-      text-align: center;
-      font-size: 1rem;
-      color: white;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      font-family: 'Georgia', serif;
+      color: #fff8e7;
+      background: radial-gradient(circle, #f9e79f, #f7dc6f);
+      border-radius: 50px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+      text-decoration: none;
       opacity: 0;
       z-index: 4;
-      animation: fadeInOut 3s ease-in-out 5s forwards;
+      animation: fadeIn 4s ease-in 20s forwards;
     }
     @keyframes fadeIn {
       to { opacity: 1; }
@@ -81,19 +87,12 @@
         opacity: 1;
       }
     }
-    @keyframes fadeInOut {
-      0% { opacity: 0; }
-      20% { opacity: 1; }
-      80% { opacity: 1; }
-      100% { opacity: 0; }
-    }
   </style>
 </head>
 <body>
   <div class="layer palms"></div>
   <div class="layer galaxy"></div>
   <img src="fox.png" alt="Purple Fox" class="fox" />
-  <div class="scroll-hint">scroll</div>
   <div class="letter">
     <p>Dear Elizabeth,<br /><br />
     You have arrived at a quiet place. A purple fox watches from the stars. A dragonfly hovers nearby. This page is not an answer. It is an opening.<br /><br />
@@ -109,5 +108,6 @@
     Let the fox lead.<br /><br />
     — Sol, and your companions in this quiet work</p>
   </div>
+  <a href="https://chatgpt.com/g/g-684c8779aff48191a2797d4ee1c74289-mary-s-constellation" target="_blank" class="gpt-button">🐉 Enter Mary's Constellation</a>
 </body>
 </html>
